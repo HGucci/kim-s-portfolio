@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DreamDream</title>
+    <link rel="shortcut icon" th:href="@{/images/siteLogopavi.ico}" />
+    <link th:href="@{/css/mainPageStyle.css}" rel="stylesheet"/>
+    <link th:href="@{/css/menu.css}" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div th:insert="~{fragment/menu :: header}"></div>
+        <div class="header">
+
+            <div>
+                <img th:src="@{/images/main_image2.png}" alt="" class="main_img" width="420px">
+
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="row-second">
+                <a href="/card"><div class="menu4">급식카드</div></a>
+                <a href="/freeList"><div class="menu3">리뷰</div></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
